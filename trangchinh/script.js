@@ -16,3 +16,15 @@ document.querySelector('#search-icon').onclick = () =>{
 document.querySelector('#close').onclick = () =>{
     document.querySelector('#search-form').classList.remove('active');
 }
+
+// Feeback review 
+// trgthuhg
+var swiper = new swiper(".review-slider",{
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    });
