@@ -1,0 +1,127 @@
+/* :Gioithieu{
+    --pink: #e91e63;
+    --dark-pink: #c2185b;
+    --black: #333;
+    --light-color: #777;
+} */
+
+.about {
+    padding: 2rem 0;
+}
+
+.about .sub-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.about .heading {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--pink);
+    margin-bottom: 2rem;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row .image {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.about .row .image img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.about .row .content {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.about .row .content h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.about .row .content p {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    line-height: 2;
+}
+
+.about .additional-content {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.about .additional-content .image img {
+    width: 50%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about .additional-content p {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    line-height: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about .icons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.about .icons-container .icons {
+    background: #eee;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 20rem;
+    padding: 1.5rem 1rem;
+}
+
+.about .icons-container i {
+    font-size: 2.5rem;
+    color: var(--pink);
+}
+
+.about .icons-container span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.about .btn {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: var(--pink);
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.about .btn:hover {
+    background: var(--dark-pink);
+}
