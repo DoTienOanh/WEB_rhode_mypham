@@ -14,6 +14,54 @@
     <link rel="stylesheet" href="style.css"
 </head>
 <body>
+    <!-- login Tam -->
+    <h2>Sign in/up Form</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="gg-facebook"></i></a>
+                    <a href="#" class="social"><i class="gg-google"></i></a>
+                    <a href="#" class="social"><i class="gg-twitter"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="gg-facebook"></i></a>
+                    <a href="#" class="social"><i class="gg-google"></i></a>
+                    <a href="#" class="social"><i class="gg-twitter"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- header section starts -->
 <header>
     <a href="#" class = "logo"><i class ="fas-fa-untensils"></i>rhode</a>
@@ -481,11 +529,216 @@
 </section>
 <!-- trgthuhg -->
 
+<!-- Header Gio hang Dang nhap Tam -->
+  <!-- header -->
+  <header>
+    <nav>
+        <div class="img-nav" style="width: 27%;">
+            <img src="img/logo.png" alt="" style="width: 30%; margin-left: 30%;" />
+        </div>
+        <div class="content-nav">
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="/login.html">Đăng nhập</a></li>
+                <div class="edit">
+                    <li><i class="fa fa-search icons" aria-hidden="true" style="margin-right: 17px;"></i></a></li>
+                    <li><i class="fa fa-heart icons" aria-hidden="true"></i></a></li>
+                    <li><i id="cart" class="fa fa-shopping-basket" aria-hidden="true"></i></li>
+                </div>
+            </ul>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <!-- modal -->
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                    <div class="cart-items">
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0 $</span>
+                        </div>
+                    </div>
 
 
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+</header>
+<!-- content -->
+<section class="wrapper">
+    <div class="products">
+        <ul>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="img/product1.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">peptide lip tint</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">16 $</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="img/product2.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">the barrier set</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">82 $</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="img/product3.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">peptide lip treatment</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">16 $</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product no-margin">
+                <div class="img-product">
+                    <img class="img-prd" src="/img/product4.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">the peptide lip tints</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">58 $</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="/img/product5.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">the rhode kit
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">109 $</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="/img/product6.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">lip case</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">28 $</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="/img/product7.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">pineapple refresh</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">28 $</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product no-margin">
+                <div class="img-product">
+                    <img class="img-prd" src="/img/product8.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">glazing milk</h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">30 $</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- footer -->
+<footer>
+    <div class="footer-item">
+        <div class="img-footer">
+            <img src="img/logo.png" alt="" />
+        </div>
+        <div class="social-footer">
+            <li><a target="_blank" href="#">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a></li>
+            <li><a target="_blank" href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a></li>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/script.js"></script>
+<!-- ends Tam -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- custom js file link -->
     <script src="script.js"></script>
 </body>
+
+<!-- login Tam -->
+<script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add('right-panel-active');
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove('right-panel-active');
+    });
+</script>
+<!-- ends Tam -->
+ 
 </html>
