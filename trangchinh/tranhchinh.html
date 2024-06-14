@@ -404,8 +404,6 @@
 
 
 
-
-
 <!-- trgthuhg -->
 <!-- Phần phản hồi khách hàng -->
 <section class="review" id="review">
@@ -549,7 +547,7 @@
     </div>
     <div class="additional-content">
         <div class="image">
-            <img src="rhode_intro2.jpg" alt="Ảnh giới thiệu 2">
+            <img src="rhode_intro2.jpg" alt="Ảnh giới thiệu 2 ">
         </div>
         <p>Rhode cam kết mang đến cho khách hàng những sản phẩm chất lượng nhất, được sản xuất từ các thành phần tự nhiên và an toàn cho da. Hãy đồng hành cùng chúng tôi trên hành trình chăm sóc và tôn vinh vẻ đẹp tự nhiên của bạn.</p>
     </div>
@@ -570,6 +568,99 @@
     <a href="#" class="btn">Biết thêm</a>
 </section>
 <!-- ! Gioi thieu ends-->
+
+
+
+
+<!-- Shopping Cart Section  Manh -->
+<div class="shopping-cart" id="shopping-cart">
+    <h2>Giỏ hàng của bạn</h2>
+    <ul class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </ul>
+    <div class="cart-total">
+        <strong>Tổng cộng:</strong> <span id="cart-total-price">$0.00</span>
+    </div>
+    <button class="btn checkout">Thanh toán</button>
+    <button class="btn close-cart">Đóng</button>
+</div>
+<!--  Shopping Cart Section  ends-->
+
+<!-- // Manh -->
+<!-- // Gio hang -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cart = document.getElementById('shopping-cart');
+        const cartItemsContainer = document.querySelector('.cart-items');
+        const cartTotalPrice = document.getElementById('cart-total-price');
+        const cartButtons = document.querySelectorAll('.btn');
+
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', addToCart);
+        });
+
+        document.querySelector('.fa-shopping-cart').addEventListener('click', () => {
+            cart.style.display = 'flex';
+        });
+
+        document.querySelector('.close-cart').addEventListener('click', () => {
+            cart.style.display = 'none';
+        });
+
+        function addToCart(event) {
+            const product = event.target.closest('.box');
+            const productName = product.querySelector('h3').innerText;
+            const productPrice = parseFloat(product.querySelector('.price').innerText.replace('$', ''));
+            const productImage = product.querySelector('img').src;
+
+            const cartItem = document.createElement('li');
+            cartItem.classList.add('cart-item');
+            cartItem.innerHTML = `
+                <img src="${productImage}" alt="${productName}">
+                <div class="item-details">
+                    <span class="item-name">${productName}</span>
+                    <span class="item-price">$${productPrice.toFixed(2)}</span>
+                </div>
+                <button class="btn remove-item">Remove</button>
+            `;
+
+            cartItemsContainer.appendChild(cartItem);
+            updateCartTotal();
+
+            cartItem.querySelector('.remove-item').addEventListener('click', () => {
+                cartItem.remove();
+                updateCartTotal();
+            });
+        }
+
+        function updateCartTotal() {
+            let total = 0;
+            document.querySelectorAll('.cart-item').forEach(item => {
+                const itemPrice = parseFloat(item.querySelector('.item-price').innerText.replace('$', ''));
+                total += itemPrice;
+            });
+            cartTotalPrice.innerText = `$${total.toFixed(2)}`;
+        }
+    });
+</script>
+ <!-- ends Gio hang -->
+
+
+<!-- Liên he Manh -->
+ <!-- Contact Section -->
+<div class="contact-section" id="lienhe">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><strong>Địa chỉ:</strong> Ngõ 12 Chùa Bộc, Đống Đa, Hà Nội</p>
+        <p><strong>Thông tin:</strong> Cửa hàng mỹ phẩm thời trang</p>
+        <p><strong>Điện thoại:</strong> (123) 456-7890</p>
+    </div>
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.587038795769!2d105.82585447438657!3d21.009184588452342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2sBanking%20Academy!5e0!3m2!1sen!2s!4v1718365639619!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<!-- ends Lienhe Manh -->
+
 
 
 

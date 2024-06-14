@@ -452,12 +452,9 @@ header .icons #menu-bars{
 }
 /* end SẢN PHẨM */
 
-/* :root{
-    --pink: #e91e63;
-    --dark-pink: #c2185b;
-    --black: #333;
-    --light-color: #777;
-} */
+
+/* Gioi thieu */
+/* Manh */
 
 .about {
     padding: 2rem 0;
@@ -579,5 +576,105 @@ header .icons #menu-bars{
 .about .btn:hover {
     background: var(--dark-pink);
 }
+/* ends Gioithieu */
+
+/* Manh */
+/* Gio hang */
+.shopping-cart {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.shopping-cart h2 {
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f90;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn.checkout {
+    background-color: #28a745;
+}
+
+.btn.close-cart {
+    background-color: #dc3545;
+}
+/* ends Giohang */
 
 
+/* Lienhe Manh */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-map {
+    text-align: center;
+}
+
+.contact-map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+}
+/* ends Lienhe Manh */
