@@ -578,103 +578,93 @@ header .icons #menu-bars{
 }
 /* ends Gioithieu */
 
-/* Manh */
-/* Gio hang */
-.shopping-cart {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    background-color: #fff;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-    padding: 20px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 1000;
-}
-
-.shopping-cart h2 {
-    margin-bottom: 20px;
-}
-
-.cart-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-grow: 1;
-    overflow-y: auto;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.cart-item img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.cart-total {
-    margin-top: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #f90;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-.btn.checkout {
-    background-color: #28a745;
-}
-
-.btn.close-cart {
-    background-color: #dc3545;
-}
-/* ends Giohang */
-
 
 /* Lienhe Manh */
 .contact-section {
-    padding: 40px 20px;
+    padding: 80px 20px;
     background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    border-top: 2px solid #eee;
 }
 
 .contact-section h2 {
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #333;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 .contact-info {
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
-.contact-info p {
-    margin: 5px 0;
+.info-item {
+    margin: 20px;
+    font-size: 1.2em;
+    color: #555;
+    max-width: 200px;
+    text-align: center;
 }
 
-.contact-map {
-    text-align: center;
+.info-item i {
+    font-size: 2em;
+    color:var(--pink);
+    margin-bottom: 15px;
 }
 
 .contact-map iframe {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     height: 450px;
     border: 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+
 /* ends Lienhe Manh */
+
+/* footer */
+/* Manh */
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    padding: .5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.footer .box-container .box a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    color: var(--black);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--green);
+}
