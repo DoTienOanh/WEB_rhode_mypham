@@ -72,4 +72,3 @@ document.querySelectorAll('.icons').forEach(function(icon) {
     });
 });
 
-

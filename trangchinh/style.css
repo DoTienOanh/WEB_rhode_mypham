@@ -578,6 +578,78 @@ header .icons #menu-bars{
 }
 /* ends Gioithieu */
 
+/* Q& A Manh */
+.qa-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.qa-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.qa-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.qa-item {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.qa-question {
+    padding: 20px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.qa-question h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #555;
+}
+
+.qa-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    padding: 0 20px;
+}
+
+.qa-answer p {
+    font-size: 1em;
+    color: #666;
+    margin: 20px 0;
+}
+
+.toggle-btn {
+    font-size: 1.5em;
+    color: #f90;
+}
+
+.qa-item.active .qa-answer {
+    max-height: 200px; /* Adjust this based on content */
+}
+
+.qa-item.active .toggle-btn {
+    transform: rotate(45deg);
+}
+/* ends Q&A Manh */
 
 /* Lienhe Manh */
 .contact-section {
