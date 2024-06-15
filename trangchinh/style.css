@@ -256,6 +256,95 @@ header .icons #menu-bars{
 
 
 
+
+
+
+/* Combo MAnh */
+/* Manh */
+/* Combo Section */
+.combo {
+    padding: 5rem 0;
+    background: #f9f9f9;
+}
+
+.combo .sub-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.combo .heading {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.combo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.combo-item {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.combo-item:hover {
+    transform: scale(1.05);
+}
+
+.combo-item img {
+    width: 100%;
+    height: auto;
+}
+
+.combo-info {
+    padding: 1.5rem;
+}
+
+.combo-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.combo-info p {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.combo-info .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background: #ffa500;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.combo-info .btn:hover {
+    background: #ff7f00;
+}
+/* ends Combo */
+/* Manh */
+
+
+
+
+
+
 /*media queries */
 @media(max-width: 991px){
     html{
