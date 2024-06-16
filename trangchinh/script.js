@@ -72,3 +72,65 @@ document.querySelectorAll('.icons').forEach(function(icon) {
     });
 });
 
+
+
+// // Tìm kiếm
+// document.addEventListener('DOMContentLoaded', () => {
+//     const searchBox = document.getElementById('search-box');
+//     const suggestionsBox = document.getElementById('suggestions');
+
+//     // Sample data for suggestions
+//     const products = [
+//         "SỮA RỬA MẶT",
+//         "TONNER",
+//         "DƯỠNG ẨM",
+//         "SERUM",
+//         "ỐP SON RHODE",
+//         "SON DƯỠNG KHÔNG MÀU",
+//         "SON DƯỠNG"
+//     ];
+
+//     searchBox.addEventListener('input', () => {
+//         const query = searchBox.value.toLowerCase();
+//         suggestionsBox.innerHTML = '';
+
+//         if (query.length > 0) {
+//             const filteredProducts = products.filter(product => 
+//                 product.toLowerCase().includes(query)
+//             );
+
+//             filteredProducts.forEach(product => {
+//                 const suggestionItem = document.createElement('div');
+//                 suggestionItem.textContent = product;
+//                 suggestionsBox.appendChild(suggestionItem);
+
+//                 suggestionItem.addEventListener('click', () => {
+//                     searchBox.value = product;
+//                     suggestionsBox.innerHTML = '';
+//                     suggestionsBox.style.display = 'none';
+//                     window.location.href = `sproduct.html?product=${encodeURIComponent(product)}`;
+//                 });
+//             });
+
+//             suggestionsBox.style.display = 'block';
+//         } else {
+//             suggestionsBox.style.display = 'none';
+//         }
+//     });
+
+//     searchBox.addEventListener('keydown', (event) => {
+//         if (event.key === 'Enter') {
+//             event.preventDefault();
+//             const query = searchBox.value;
+//             window.location.href = `sproduct.html?product=${encodeURIComponent(query)}`;
+//         }
+//     });
+
+//     document.getElementById('close').addEventListener('click', () => {
+//         searchBox.value = '';
+//         suggestionsBox.innerHTML = '';
+//         suggestionsBox.style.display = 'none';
+//     });
+// });
+
+

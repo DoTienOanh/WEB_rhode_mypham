@@ -258,11 +258,28 @@ header .icons #menu-bars{
 #prodetails .single-pro-details button{
     background: #333;
     color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    transition: background 0.3s;
 }
+#prodetails .single-pro-details button:hover{
+    background: #ccc;
+}
+
 #prodetails .single-pro-details span{
     line-height: 25px;
-    
+    font-size: 16px;   
 }
+h6{
+    font-size: 12px;
+}
+h4{
+    font-size: 25px;
+}
+
 
 
 
