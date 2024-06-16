@@ -218,7 +218,7 @@ header .icons #menu-bars{
     padding-top: 30px; 
 }
 #prodetails .single-pro-details h4{
-    padding: 40px 0 20px ;
+    padding: 10px 0 20px ;
 }
 #prodetails .single-pro-details h2{
     font-size: 26px;
@@ -229,19 +229,21 @@ header .icons #menu-bars{
     padding-left: 10px;
     font-size: 16px;
     margin-right: 10px;
+    border-radius: 0.5rem; /* Độ cong của góc là 10px, bạn có thể điều chỉnh số này để thay đổi độ cong */
+    border: 1px solid #ccc; /* Nếu muốn có đường viền xung quanh input */
 }
 #prodetails .single-pro-details input:focus{
     outline: none;
 
 }
 #prodetails .single-pro-details button{
-    background: #333;
+    background: grey;
     color: #fff;
     border-radius: 0.5rem;
     text-decoration: none;
     font-size: 1.4rem;
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 1.3rem 1.5rem;
     transition: background 0.3s;
 }
 #prodetails .single-pro-details button:hover{
@@ -257,6 +259,14 @@ h6{
 }
 h4{
     font-size: 25px;
+}
+.product-container {
+    background-color: #f2f2f2; /* Màu nền xám nhạt */
+    padding: 25px;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    width:30px
+    margin: 20px auto; /* Canh giữa theo chiều ngang */
 }
 
 /* END CHITIETSANPHAM */
