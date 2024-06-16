@@ -17,7 +17,6 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -37,24 +36,6 @@ section:nth-child(even){
     background:#eee;
 
 }
-
-/* trgthuhg - sanpham */
-/* .sub-heading{
-    text-align: center;
-    color: var(--green);
-    font-size: 2rem;
-    padding-top: 1rem;
-}
-
-.heading{
-    text-align: center;
-    color: var(--black);
-    font-size: 3rem;
-    padding-bottom: 2rem;
-    text-transform: uppercase;
-} */
-
-/* trgthuhg - sanpham*/
 .btn{
     margin-top: 1rem ;
     display: inline-block;
@@ -159,10 +140,7 @@ header .icons #menu-bars{
 #search-form #search-box::placeholder{
     color: #eee; 
 }
-/*
-#search-form #search-box::-webkit-search-cancel-button{
-    -webkit-appearance: none;    
-}*/
+
 #search-form #search-box::search-cancel-button {
     appearance: none;
 }
@@ -216,6 +194,7 @@ header .icons #menu-bars{
     background: var(--green);
 
 }
+/* CHI TIẾT SẢN PHẨM */
 /* chi tiết sản phẩm  */
 #prodetails{
     display: flex;
@@ -280,7 +259,7 @@ h4{
     font-size: 25px;
 }
 
-
+/* END CHITIETSANPHAM */
 
 
 
