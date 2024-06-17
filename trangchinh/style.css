@@ -1016,7 +1016,7 @@ header {
   
   .set-video video {
     width: 100%;
-    height: 300px; /* Chiều cao video */
+    height: 400px; /* Chiều cao video */
     margin: 0;
   }
   
