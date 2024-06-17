@@ -198,29 +198,34 @@ header .icons #menu-bars{
 }
 /* CHI TIẾT SẢN PHẨM */
 /* chi tiết sản phẩm  */
-#prodetails{
+#prodetails {
     display: flex;
+    flex-wrap: wrap; /* Thêm flex-wrap để các phần tử có thể xuống hàng */
     margin-top: 77px;
+    padding: 20px; /* Thêm padding để có khoảng cách tốt hơn trên các thiết bị nhỏ */
 }
-#prodetails .single-pro-image{
-    width: 40%;
-    margin-right: 50px;
+
+#prodetails .single-pro-image {
+    width: 100%; /* Mặc định là 100% chiều rộng */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới để tách biệt các phần tử */
 }
-.small-img-group{
+
+.small-img-group {
     display: flex;
     justify-content: space-between;
-
 }
-.smail-img-col{
+
+.small-img-col {
     flex-basis: 23%;
     cursor: pointer;
 }
-#prodetails .single-pro-details{
-    width: 50%;
 
+#prodetails .single-pro-details {
+    width: 100%; /* Mặc định là 100% chiều rộng */
 }
-#prodetails .single-pro-details h4{
-    padding: 20px 0 20px ;
+
+#prodetails .single-pro-details h4 {
+    padding: 20px 0;
 }
 
 #prodetails .single-pro-details input {
@@ -229,13 +234,15 @@ header .icons #menu-bars{
     padding-left: 10px;
     font-size: 16px;
     margin-right: 20px;
-    border-radius: 0.5rem; /* Độ cong của góc là 10px, bạn có thể điều chỉnh số này để thay đổi độ cong */
-    border: 1px solid #ccc; /* Nếu muốn có đường viền xung quanh input */
+    border-radius: 0.5rem; /* Độ cong của góc */
+    border: 1px solid #ccc;
 }
-#prodetails .single-pro-details input:focus{
+
+#prodetails .single-pro-details input:focus {
     outline: none;
 }
-#prodetails .single-pro-details button{
+
+#prodetails .single-pro-details button {
     background: grey;
     color: #fff;
     border-radius: 0.5rem;
@@ -245,26 +252,48 @@ header .icons #menu-bars{
     padding: 1.3rem 4rem;
     transition: background 0.3s;
 }
-#prodetails .single-pro-details button:hover{
+
+#prodetails .single-pro-details button:hover {
     background: #ccc;
 }
 
-#prodetails .single-pro-details span{
+#prodetails .single-pro-details span {
     line-height: 25px;
-    font-size: 16px;   
+    font-size: 16px;
 }
-h6{
+
+h6 {
     font-size: 12px;
 }
-h4{
+
+h4 {
     font-size: 25px;
 }
+
 .product-container {
-    background-color: #f2f2f2; /* Màu nền xám nhạt */
+    background-color: #f2f2f2;
     padding: 25px;
-    border-radius: 8px; 
-    /* margin: 20px auto; Canh giữa theo chiều ngang */
+    border-radius: 8px;
 }
+
+/* Media Queries cho các thiết bị nhỏ hơn */
+@media (min-width: 768px) {
+    #prodetails .single-pro-image {
+        width: 40%;
+        margin-right: 50px;
+        margin-bottom: 0; /* Xóa khoảng cách dưới khi màn hình lớn hơn */
+    }
+
+    #prodetails .single-pro-details {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Giữ nguyên thiết kế ban đầu cho màn hình lớn */
+}
+
+
 
 /* END CHITIETSANPHAM */
 
