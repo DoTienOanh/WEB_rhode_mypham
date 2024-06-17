@@ -546,7 +546,152 @@ header {
 
 
 
+/* set Manh */
+/* Phần Set */
+.set {
+    padding: 6rem 9%;
+    background-color: var(--maincolor);
+    color: var(--black);
+}
 
+.set .sub-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--green);
+}
+
+.set .heading {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+.set-subsection {
+    margin-bottom: 6rem;
+}
+
+.set-subsection .subsection-heading {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark-pink);
+}
+
+.set-item {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.set-item .combo-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.set-item .combo-carousel img {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.set-item .combo-info {
+    padding: 3rem;
+}
+
+.set-item h3 {
+    font-size: 3.5rem;
+    color: var(--green);
+    margin-bottom: 2rem;
+}
+
+.set-item p {
+    font-size: 2rem;
+    color: var(--light-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.set-item .btn {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #fff;
+    background: var(--green);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 1.2rem 3rem;
+    transition: background .3s;
+}
+
+.set-item .btn:hover {
+    background: var(--dark-pink);
+}
+
+@media (max-width: 1024px) {
+    .set .sub-heading {
+        font-size: 2rem;
+    }
+    
+    .set .heading {
+        font-size: 4rem;
+    }
+    
+    .set-subsection .subsection-heading {
+        font-size: 3rem;
+    }
+    
+    .set-item {
+        margin-bottom: 3rem;
+    }
+    
+    .set-item h3 {
+        font-size: 3rem;
+    }
+    
+    .set-item p {
+        font-size: 1.8rem;
+    }
+    
+    .set-item .btn {
+        font-size: 1.6rem;
+        padding: 1rem 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .set {
+        padding: 4rem 6%;
+    }
+    
+    .set .heading {
+        font-size: 3.5rem;
+    }
+    
+    .set-subsection .subsection-heading {
+        font-size: 2.5rem;
+    }
+    
+    .set-item {
+        margin-bottom: 2rem;
+    }
+    
+    .set-item h3 {
+        font-size: 2.5rem;
+    }
+    
+    .set-item p {
+        font-size: 1.6rem;
+    }
+    
+    .set-item .btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 2rem;
+    }
+}
+/* ends set */
 
 
 
