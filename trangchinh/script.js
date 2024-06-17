@@ -149,20 +149,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Manh
 // Combo
-document.addEventListener('DOMContentLoaded', function () {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const sections = document.querySelectorAll('.combo-subsection');
+// Tab functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabContents = document.querySelectorAll(".combo-subsection");
 
     tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            sections.forEach(section => section.classList.remove('active'));
+        button.addEventListener("click", function () {
+            tabButtons.forEach(btn => btn.classList.remove("active"));
+            tabContents.forEach(content => content.classList.remove("active"));
 
-            button.classList.add('active');
-            document.getElementById(button.dataset.target).classList.add('active');
+            button.classList.add("active");
+            document.getElementById(button.dataset.target).classList.add("active");
         });
     });
 });
+
+
 // ends Combo Manh
 
 // thêm vào giỏ hàng

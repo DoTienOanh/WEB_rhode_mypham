@@ -75,12 +75,53 @@ header .logo i{
 }
 
 
+.header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+
+
 header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem ;
     padding: .5rem 1.5rem;
     color: var(--light-color);
 }
+
+.header .navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header .navbar .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.header .navbar .dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header .navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header .navbar .dropdown:hover a {
+    background-color: #ddd;
+}
+
+
+
+
+
 
 header .navbar a.active,
 header .navbar a:hover{
@@ -300,46 +341,195 @@ h4 {
 
 /* Combo MAnh */
 /* Combo Section */
-.combo {
-    text-align: center;
-    padding: 4rem 0;
+
+/* Style for Dropdown Menu */
+/* Dropdown styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
-.combo .sub-heading,
-.combo .heading {
-    color: #333; /* Sử dụng màu sắc phù hợp */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #fff;
+    color: #333;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
+}
+
+/* Other styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.icons i {
+    font-size: 18px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#search-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#search-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#close {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.combo {
+    padding: 50px 0;
+    text-align: center;
 }
 
 .combo .sub-heading {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 20px;
 }
 
 .combo .heading {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    color: #ff6699; /* Đổi màu để phù hợp với trang web */
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 40px;
 }
 
+.combo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.combo-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+}
+
+.combo-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.combo-carousel img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.combo-info {
+    padding: 20px;
+}
+
+.combo-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.combo-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.combo-info .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.combo-info .btn:hover {
+    background: #555;
+}
+
+/* Tab section styles */
 .tab-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .tab-button {
-    padding: 1rem 2rem;
-    font-size: 1.25rem;
+    padding: 10px 20px;
     cursor: pointer;
-    border: none;
-    background: #ddd;
-    margin: 0 0.5rem;
-    transition: background 0.3s;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
 }
 
-.tab-button.active, .tab-button:hover {
-    background: #ff6699;
-    color: #fff;
+.tab-button.active,
+.tab-button:hover {
+    background: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .combo-subsection {
@@ -350,77 +540,158 @@ h4 {
     display: block;
 }
 
-.combo-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    justify-items: center;
+.spacer {
+    height: 50px;
 }
 
-.combo-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+
+
+/* set Manh */
+/* Phần Set */
+.set {
+    padding: 6rem 9%;
+    background-color: var(--maincolor);
+    color: var(--black);
+}
+
+.set .sub-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--green);
+}
+
+.set .heading {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+.set-subsection {
+    margin-bottom: 6rem;
+}
+
+.set-subsection .subsection-heading {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark-pink);
+}
+
+.set-item {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    max-width: 100%;
+    margin-bottom: 4rem;
 }
 
-.combo-item:hover {
-    transform: translateY(-5px);
-}
-
-.combo-item .combo-carousel {
+.set-item .combo-carousel {
     display: flex;
     overflow-x: auto;
-    gap: 5px;
-    padding: 10px 0;
-    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
-.combo-item .combo-carousel img {
+.set-item .combo-carousel img {
     flex: 0 0 auto;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    scroll-snap-align: start;
 }
 
-.combo-info {
-    padding: 1rem;
+.set-item .combo-info {
+    padding: 3rem;
 }
 
-.combo-info h3 {
-    font-size: 1.75rem;
-    color: #333;
-    margin-bottom: 1rem;
+.set-item h3 {
+    font-size: 3.5rem;
+    color: var(--green);
+    margin-bottom: 2rem;
 }
 
-.combo-info p {
-    font-size: 1.25rem;
-    color: #666;
-    margin-bottom: 1rem;
+.set-item p {
+    font-size: 2rem;
+    color: var(--light-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
-.combo-info .btn {
+.set-item .btn {
     display: inline-block;
-    padding: 0.8rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #fff;
-    background: #ff6699;
-    border-radius: 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    transition: background 0.3s;
+    background: var(--green);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 1.2rem 3rem;
+    transition: background .3s;
 }
 
-.combo-info .btn:hover {
-    background: #e65c99;
+.set-item .btn:hover {
+    background: var(--dark-pink);
 }
 
+@media (max-width: 1024px) {
+    .set .sub-heading {
+        font-size: 2rem;
+    }
+    
+    .set .heading {
+        font-size: 4rem;
+    }
+    
+    .set-subsection .subsection-heading {
+        font-size: 3rem;
+    }
+    
+    .set-item {
+        margin-bottom: 3rem;
+    }
+    
+    .set-item h3 {
+        font-size: 3rem;
+    }
+    
+    .set-item p {
+        font-size: 1.8rem;
+    }
+    
+    .set-item .btn {
+        font-size: 1.6rem;
+        padding: 1rem 2.5rem;
+    }
+}
 
-
-
+@media (max-width: 768px) {
+    .set {
+        padding: 4rem 6%;
+    }
+    
+    .set .heading {
+        font-size: 3.5rem;
+    }
+    
+    .set-subsection .subsection-heading {
+        font-size: 2.5rem;
+    }
+    
+    .set-item {
+        margin-bottom: 2rem;
+    }
+    
+    .set-item h3 {
+        font-size: 2.5rem;
+    }
+    
+    .set-item p {
+        font-size: 1.6rem;
+    }
+    
+    .set-item .btn {
+        font-size: 1.4rem;
+        padding: 0.8rem 2rem;
+    }
+}
+/* ends set */
 
 
 
