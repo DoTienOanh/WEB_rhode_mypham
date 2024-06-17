@@ -65,12 +65,12 @@ document.querySelector('.btn').addEventListener('click', function(event) {
     document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
 });
 
-// Hiển thị thông báo khi nhấn vào các biểu tượng
-document.querySelectorAll('.icons').forEach(function(icon) {
-    icon.addEventListener('click', function() {
-        alert(this.getAttribute('data-message'));
-    });
-});
+// // Hiển thị thông báo khi nhấn vào các biểu tượng
+// document.querySelectorAll('.icons').forEach(function(icon) {
+//     icon.addEventListener('click', function() {
+//         alert(this.getAttribute('data-message'));
+//     });
+// });
 
 
 //Tìm kiếm
@@ -297,43 +297,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // ends Combo Manh
-
-// thêm vào giỏ hàng
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const cartButtons = document.querySelectorAll(".add-to-cart");
-
-//     cartButtons.forEach(button => {
-//         button.addEventListener("click", function(event) {
-//             const name = this.getAttribute("data-name");
-//             const price = this.getAttribute("data-price");
-//             const image = this.getAttribute("data-image");
-            
-//             const product = {
-//                 name: name,
-//                 price: price,
-//                 image: image,
-//                 quantity: 1
-//             };
-
-//             let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-//             // Kiểm tra nếu sản phẩm đã có trong giỏ hàng
-//             const existingProductIndex = cart.findIndex(item => item.name === name);
-//             if (existingProductIndex !== -1) {
-//                 // Nếu sản phẩm đã có trong giỏ hàng, tăng số lượng
-//                 cart[existingProductIndex].quantity += 1;
-//             } else {
-//                 // Nếu sản phẩm chưa có trong giỏ hàng, thêm vào
-//                 cart.push(product);
-//             }
-
-//             localStorage.setItem("cart", JSON.stringify(cart));
-
-//             // Chuyển hướng đến trang giỏ hàng
-//             window.location.href = "giohang.html";
-//         });
-//     });
-// });
-
 

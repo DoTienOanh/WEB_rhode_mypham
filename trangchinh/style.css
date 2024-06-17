@@ -310,7 +310,7 @@ header .icons #menu-bars {
     margin-left: .25rem;
 }
 
-.btn {
+/* .btn {
     cursor: pointer;
     outline: none;
     font-weight: 400;
@@ -323,7 +323,23 @@ header .icons #menu-bars {
     font-size: 1rem;
     border-radius: .25rem;
     transition: all .2s ease-in-out;
+} */
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--light-color);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
 }
+
+.btn:hover {
+    background: var(--maincolor);
+    letter-spacing: .1rem;
+}
+
 
 .btn-secondary {
     color: #292b2c;
@@ -333,8 +349,8 @@ header .icons #menu-bars {
 
 .btn-primary {
     color: #fff;
-    background-color: #0275d8;
-    border-color: #0275d8;
+    background-color: #555;
+    border-color:#555;
 }
 
 .modal-header {
@@ -412,14 +428,14 @@ h5.modal-title {
 
 .btn-danger {
     color: white;
-    background-color: #EB5757;
+    background-color: #292b2c;
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-danger:hover {
-    background-color: #CC4C4C;
+    background-color: #ccc;
 }
 
 .cart-quantity-input {
@@ -680,7 +696,7 @@ header {
     cursor: pointer;
 }
 
-#search-form {
+/* #search-form {
     display: none;
     position: fixed;
     top: 50%;
@@ -702,7 +718,7 @@ header {
 #close {
     font-size: 20px;
     cursor: pointer;
-}
+} */
 
 .combo {
     padding: 50px 0;
