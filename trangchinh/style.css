@@ -168,13 +168,14 @@ header .icons #menu-bars{
     padding-top: 9rem;
 }
 .home .home-slider .slide .content{
-    flex: 1 1 45rem;
+    flex: 1 1 35rem;
 }
 .home .home-slider .slide .image{
-    flex: 1 1 45rem;
+    flex: 1 1 30rem;
 }
 .home .home-slider .slide .image img{
     width: 100%;
+    
 }
 .home .home-slider .slide .content span{
     color: var(--black);
