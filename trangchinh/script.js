@@ -86,13 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "SERUM", url: "Serum.html" },
         { name: "ỐP SON RHODE", url: "case.html" },
         { name: "SON DƯỠNG KHÔNG MÀU", url: "Sonduongkhongmau.html" },
-        { name: "SON DƯỠNG", url: "Sonribbon.html" },
+        
         { name: "SON DƯỠNG ribbon", url: "Sonribbon.html" },
-        { name: "SON DƯỠNG vị bánh mì", url: "Sonvibanhmi.html" },
-        { name: "SON DƯỠNG vị cà phê", url: "Sonvicaphe.html" },
-        { name: "SON DƯỠNG vị mâm xôi", url: "Sonvimamxoi.html" },
-        { name: "SON DƯỠNG vị thạch", url: "Sonvithach.html" },
-        { name: "SON DƯỠNG sữa dâu", url: "Sonsanphamcuoi.html" }
+        { name: "SON DƯỠNG TOAST", url: "Sonvibanhmi.html" },
+        { name: "SON DƯỠNG vị ESPRESSO", url: "Sonvicaphe.html" },
+        { name: "SON DƯỠNG RASPBERRYJELLY", url: "Sonvimamxoi.html" },
+        { name: "SON DƯỠNG JELLYTINT", url: "Sonvithach.html" },
+        { name: "SON DƯỠNG MILK", url: "Sonsanphamcuoi.html" }
     ];
 
     searchBox.addEventListener('input', () => {
@@ -147,6 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+<<<<<<< HEAD
 //Tam
 // Modal
 var modal = document.getElementById("myModal");
@@ -274,22 +275,27 @@ function addItemToCart(title, price, images) {
 
 
 
+=======
+>>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
 // Manh
 // Combo
-document.addEventListener('DOMContentLoaded', function () {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const sections = document.querySelectorAll('.combo-subsection');
+// Tab functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabContents = document.querySelectorAll(".combo-subsection");
 
     tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            sections.forEach(section => section.classList.remove('active'));
+        button.addEventListener("click", function () {
+            tabButtons.forEach(btn => btn.classList.remove("active"));
+            tabContents.forEach(content => content.classList.remove("active"));
 
-            button.classList.add('active');
-            document.getElementById(button.dataset.target).classList.add('active');
+            button.classList.add("active");
+            document.getElementById(button.dataset.target).classList.add("active");
         });
     });
 });
+
+
 // ends Combo Manh
 
 // thêm vào giỏ hàng
