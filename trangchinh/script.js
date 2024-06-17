@@ -151,32 +151,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Manh
 // Combo
-// Optional JavaScript for carousel functionality
-document.querySelectorAll('.combo-carousel').forEach(carousel => {
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+document.addEventListener('DOMContentLoaded', function () {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const sections = document.querySelectorAll('.combo-subsection');
 
-    carousel.addEventListener('mousedown', (e) => {
-        isDown = true;
-        startX = e.pageX - carousel.offsetLeft;
-        scrollLeft = carousel.scrollLeft;
-    });
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            sections.forEach(section => section.classList.remove('active'));
 
-    carousel.addEventListener('mouseleave', () => {
-        isDown = false;
-    });
-
-    carousel.addEventListener('mouseup', () => {
-        isDown = false;
-    });
-
-    carousel.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 3; // Adjust scrolling speed here
-        carousel.scrollLeft = scrollLeft - walk;
+            button.classList.add('active');
+            document.getElementById(button.dataset.target).classList.add('active');
+        });
     });
 });
-// ends Combo Manh
