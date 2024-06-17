@@ -108,6 +108,24 @@
     <div class="credit"> copyright @ 2021 by <span>nhóm 3 thiếu nữ và 1 chàng trai</span></div>
 
 </section>
+
+<!-- // Manh JavaScript cho Hiệu Ứng Mượt mà -->
+<!-- //Lienhe -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const contactSection = document.getElementById('contact');
+
+        window.addEventListener('scroll', () => {
+            const sectionPosition = contactSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.5;
+
+            if (sectionPosition < screenPosition) {
+                contactSection.classList.add('appear');
+            }
+        });
+    });
+</script>
+<!-- // ends Lienhe  -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- custom js file link -->
 <script src="script.js"></script>
