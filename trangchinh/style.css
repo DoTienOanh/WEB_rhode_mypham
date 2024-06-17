@@ -1080,28 +1080,39 @@ header {
     box-shadow: var(--box-shadow);
     overflow: hidden;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .combo1-item .combo-carousel {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    justify-content: center;
+    align-items: center;
 }
 
 .combo1-item .combo-carousel img {
     flex: 0 0 auto;
     width: 100%;
     scroll-snap-align: start;
+    width: 300px; /* Chiều rộng ảnh */
+    height: 250px; /* Chiều cao ảnh */
+    object-fit: contain; /* Giữ nguyên tỷ lệ khung hình */
+    max-width: 400px; /* Chiều rộng tối đa */
+    max-height: 300px; /* Chiều cao tối đa */
+    flex: 0 0 auto; /* Giữ nguyên tỷ lệ khung hình của ảnh */
 }
 
 .combo1-item .combo-info {
     padding: 3rem;
+    margin: 0 auto; /* Căn giữa .set-info theo chiều ngang */
 }
 
 .combo1-item h3 {
     font-size: 3.5rem;
     color: var(--gray);
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .combo1-item p {
@@ -1109,13 +1120,14 @@ header {
     color: var(--light-color);
     line-height: 1.6;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .combo1-item .btn {
     display: inline-block;
     font-size: 1.8rem;
-    color: #fff;
-    background: var(--gray);
+    color: var(--box-shadow);
+    background: var(--light-color);
     border-radius: .5rem;
     cursor: pointer;
     padding: 1.2rem 3rem;
@@ -1123,7 +1135,8 @@ header {
 }
 
 .combo1-item .btn:hover {
-    background: var(--dark-pink);
+    background: var(--maincolor);
+    
 }
 
 @media (max-width: 1024px) {
