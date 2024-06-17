@@ -133,7 +133,79 @@ document.querySelectorAll('.icons').forEach(function(icon) {
 //     });
 // });
 
-//CHUYỂN LẠI KIỂU CHỮ
+// //CHUYỂN LẠI KIỂU CHỮ
+
+document.addEventListener('DOMContentLoaded', () => {
+    const searchBox = document.getElementById('search-box');
+    const suggestionsBox = document.getElementById('suggestions');
+
+    const products = [
+        { name: "SỮA RỬA MẶT", url: "SRM.html" },
+        { name: "TONER", url: "Nuochoahong.html" },
+        { name: "DƯỠNG ẨM", url: "Duongam.html" },
+        { name: "SERUM", url: "Serum.html" },
+        { name: "ỐP SON RHODE", url: "case.html" },
+        { name: "SON DƯỠNG KHÔNG MÀU", url: "Sonduongkhongmau.html" },
+        { name: "SON DƯỠNG", url: "Sonribbon.html" },
+        { name: "SON DƯỠNG ribbon", url: "Sonribbon.html" },
+        { name: "SON DƯỠNG vị bánh mì", url: "Sonvibanhmi.html" },
+        { name: "SON DƯỠNG vị cà phê", url: "Sonvicaphe.html" },
+        { name: "SON DƯỠNG vị mâm xôi", url: "Sonvimamxoi.html" },
+        { name: "SON DƯỠNG vị thạch", url: "Sonvithach.html" },
+        { name: "SON DƯỠNG sữa dâu", url: "Sonsanphamcuoi.html" }
+    ];
+
+    searchBox.addEventListener('input', () => {
+        const query = searchBox.value.toLowerCase();
+        suggestionsBox.innerHTML = '';
+
+        if (query.length > 0) {
+            const filteredProducts = products.filter(product => 
+                product.name.toLowerCase().includes(query)
+            );
+
+            filteredProducts.forEach(product => {
+                const suggestionItem = document.createElement('div');
+                suggestionItem.textContent = product.name;
+                suggestionsBox.appendChild(suggestionItem);
+
+                suggestionItem.addEventListener('click', () => {
+                    searchBox.value = product.name;
+                    suggestionsBox.innerHTML = '';
+                    suggestionsBox.style.display = 'none';
+                    window.location.href = product.url;
+                });
+            });
+
+            suggestionsBox.style.display = 'block';
+        } else {
+            suggestionsBox.style.display = 'none';
+        }
+    });
+
+    searchBox.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            const query = searchBox.value.toLowerCase();
+            const product = products.find(product => 
+                product.name.toLowerCase() === query
+            );
+
+            if (product) {
+                window.location.href = product.url;
+            } else {
+                alert("Không tìm thấy sản phẩm");
+            }
+        }
+    });
+
+    document.getElementById('close').addEventListener('click', () => {
+        searchBox.value = '';
+        suggestionsBox.innerHTML = '';
+        suggestionsBox.style.display = 'none';
+    });
+});
+
 
 
 
