@@ -310,7 +310,7 @@ header .icons #menu-bars {
     margin-left: .25rem;
 }
 
-.btn {
+/* .btn {
     cursor: pointer;
     outline: none;
     font-weight: 400;
@@ -323,7 +323,23 @@ header .icons #menu-bars {
     font-size: 1rem;
     border-radius: .25rem;
     transition: all .2s ease-in-out;
+} */
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--light-color);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
 }
+
+.btn:hover {
+    background: var(--maincolor);
+    letter-spacing: .1rem;
+}
+
 
 .btn-secondary {
     color: #292b2c;
