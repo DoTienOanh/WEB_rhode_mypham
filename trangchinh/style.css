@@ -74,6 +74,7 @@ header .logo i{
 
 }
 
+
 header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem ;
@@ -176,7 +177,7 @@ header .icons #menu-bars{
     width: 100%;
 }
 .home .home-slider .slide .content span{
-    color: var(--green);
+    color: var(--black);
     font-size: 2.5rem;
 }
 .home .home-slider .slide .content h3{
@@ -268,85 +269,125 @@ h4{
 
 
 /* Combo MAnh */
-/* Manh */
 /* Combo Section */
 .combo {
-    padding: 5rem 0;
-    background: #f9f9f9;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.combo .sub-heading,
+.combo .heading {
+    color: #333; /* Sử dụng màu sắc phù hợp */
 }
 
 .combo .sub-heading {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .combo .heading {
-    text-align: center;
-    font-size: 3.5rem;
-    color: #333;
+    font-size: 3rem;
     margin-bottom: 3rem;
+    color: #ff6699; /* Đổi màu để phù hợp với trang web */
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.tab-button {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: none;
+    background: #ddd;
+    margin: 0 0.5rem;
+    transition: background 0.3s;
+}
+
+.tab-button.active, .tab-button:hover {
+    background: #ff6699;
+    color: #fff;
+}
+
+.combo-subsection {
+    display: none;
+}
+
+.combo-subsection.active {
+    display: block;
 }
 
 .combo-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    justify-content: center;
+    justify-items: center;
 }
 
 .combo-item {
     background: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 10px;
     overflow: hidden;
-    max-width: 300px;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    max-width: 100%;
 }
 
 .combo-item:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
-.combo-item img {
+.combo-item .combo-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.combo-item .combo-carousel img {
+    flex: 0 0 auto;
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .combo-info {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .combo-info h3 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     color: #333;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .combo-info p {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     color: #666;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .combo-info .btn {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
     color: #fff;
-    background: #ffa500;
+    background: #ff6699;
     border-radius: 0.5rem;
-    transition: background 0.3s;
+    text-align: center;
     text-decoration: none;
+    transition: background 0.3s;
 }
 
 .combo-info .btn:hover {
-    background: #ff7f00;
+    background: #e65c99;
 }
-/* ends Combo */
-/* Manh */
+
 
 
 
@@ -547,52 +588,56 @@ h4{
 /* Manh */
 
 .about {
+    text-align: center;
     padding: 2rem 0;
 }
 
-.about .sub-heading {
+.about .sub-heading,
+.about .heading {
     text-align: center;
+}
+
+.about .sub-heading {
     font-size: 2.5rem;
     color: var(--black);
     margin-bottom: 1rem;
 }
 
 .about .heading {
-    text-align: center;
     font-size: 3.5rem;
     color: var(--pink);
     margin-bottom: 2rem;
 }
 
-.about .row {
+.about .centered-image {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-.about .row .image {
-    flex: 1 1 45%;
-    max-width: 45%;
+.about .centered-image img {
+    max-width: 100%;
+    height: auto;
+    max-width: 650px; /* Adjust this value as needed for the desired size */
+    border-radius: 10px; /* Optional: adds rounded corners */
 }
 
-.about .row .image img {
-    width: 45%;
-    border-radius: 0.5rem;
+.about .content {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
 }
 
-.about .row .content {
-    flex: 1 1 45%;
-    max-width: 45%;
-}
-
-.about .row .content h3 {
+.about .content h3 {
+    text-align: center;
     color: var(--black);
     font-size: 2.5rem;
     padding: 0.5rem 0;
 }
 
-.about .row .content p {
+.about .content p {
     color: var(--light-color);
     font-size: 1.5rem;
     padding: 0.5rem 0;
@@ -604,10 +649,17 @@ h4{
     padding: 2rem 0;
 }
 
+.about .additional-content .image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .about .additional-content .image img {
-    width: 50%;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+    max-width: 400px; /* Adjust this value as needed for the desired size */
+    border-radius: 10px; /* Optional: adds rounded corners */
 }
 
 .about .additional-content p {
@@ -667,6 +719,7 @@ h4{
     background: var(--dark-pink);
 }
 /* ends Gioithieu */
+
 
 /* Q& A Manh */
 .qa-section {
