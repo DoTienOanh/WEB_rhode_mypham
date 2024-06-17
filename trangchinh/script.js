@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 //Tam
 // Modal
 var modal = document.getElementById("myModal");
@@ -275,8 +275,8 @@ function addItemToCart(title, price, images) {
 
 
 
-=======
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+// =======
+// >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
 // Manh
 // Combo
 // Tab functionality
