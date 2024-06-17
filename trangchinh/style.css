@@ -201,7 +201,7 @@ header .icons #menu-bars{
 #prodetails {
     display: flex;
     flex-wrap: wrap; /* Thêm flex-wrap để các phần tử có thể xuống hàng */
-    margin-top: 77px;
+    margin: 77px 20px 20px 20px;
     padding: 20px; /* Thêm padding để có khoảng cách tốt hơn trên các thiết bị nhỏ */
 }
 
@@ -216,7 +216,7 @@ header .icons #menu-bars{
 }
 
 .small-img-col {
-    flex-basis: 23%;
+    flex-basis: 25%;
     cursor: pointer;
 }
 

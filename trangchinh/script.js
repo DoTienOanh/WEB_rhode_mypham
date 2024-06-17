@@ -86,13 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "SERUM", url: "Serum.html" },
         { name: "ỐP SON RHODE", url: "case.html" },
         { name: "SON DƯỠNG KHÔNG MÀU", url: "Sonduongkhongmau.html" },
-        { name: "SON DƯỠNG", url: "Sonribbon.html" },
+        
         { name: "SON DƯỠNG ribbon", url: "Sonribbon.html" },
-        { name: "SON DƯỠNG vị bánh mì", url: "Sonvibanhmi.html" },
-        { name: "SON DƯỠNG vị cà phê", url: "Sonvicaphe.html" },
-        { name: "SON DƯỠNG vị mâm xôi", url: "Sonvimamxoi.html" },
-        { name: "SON DƯỠNG vị thạch", url: "Sonvithach.html" },
-        { name: "SON DƯỠNG sữa dâu", url: "Sonsanphamcuoi.html" }
+        { name: "SON DƯỠNG TOAST", url: "Sonvibanhmi.html" },
+        { name: "SON DƯỠNG vị ESPRESSO", url: "Sonvicaphe.html" },
+        { name: "SON DƯỠNG RASPBERRYJELLY", url: "Sonvimamxoi.html" },
+        { name: "SON DƯỠNG JELLYTINT", url: "Sonvithach.html" },
+        { name: "SON DƯỠNG MILK", url: "Sonsanphamcuoi.html" }
     ];
 
     searchBox.addEventListener('input', () => {
