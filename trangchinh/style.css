@@ -1513,6 +1513,7 @@ header {
 }
 
 .about .centered-image img {
+    display: flex;
     max-width: 100%;
     height: auto;
     max-width: 650px;
@@ -1554,6 +1555,7 @@ header {
 }
 
 .about .additional-content .image img {
+    display: flex;
     max-width: 100%;
     height: auto;
     max-width: 400px;
