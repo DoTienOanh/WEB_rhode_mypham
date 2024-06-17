@@ -147,8 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
 // Manh
 // Combo
 document.addEventListener('DOMContentLoaded', function () {
