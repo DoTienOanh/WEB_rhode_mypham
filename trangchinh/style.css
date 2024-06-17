@@ -413,7 +413,7 @@ header {
     cursor: pointer;
 }
 
-#search-form {
+/* #search-form {
     display: none;
     position: fixed;
     top: 50%;
@@ -435,7 +435,7 @@ header {
 #close {
     font-size: 20px;
     cursor: pointer;
-}
+} */
 
 .combo {
     padding: 50px 0;
