@@ -79,9 +79,9 @@ header .logo i {
 }
 
 
-<<<<<<< HEAD
-header .navbar a {
-=======
+/* <<<<<<< HEAD */
+/* header .navbar a */
+/* ======= */
 .header .navbar {
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@ header .navbar a {
 
 
 header .navbar a{
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+/* >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3 */
     font-size: 1.7rem;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
@@ -473,13 +473,13 @@ h5.modal-title {
 }
 
 #prodetails .single-pro-image {
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
     width: 40%;
     margin-right: 50px;
-=======
+/* ======= */
     width: 100%; /* Mặc định là 100% chiều rộng */
     margin-bottom: 20px; /* Thêm khoảng cách dưới để tách biệt các phần tử */
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+/* >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3 */
 }
 
 .small-img-group {
@@ -487,7 +487,7 @@ h5.modal-title {
     justify-content: space-between;
 }
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 .smail-img-col {
     flex-basis: 23%;
     cursor: pointer;
@@ -495,23 +495,24 @@ h5.modal-title {
 
 #prodetails .single-pro-details {
     width: 50%;
-=======
+}
+/* ======= */
 .small-img-col {
     flex-basis: 25%;
     cursor: pointer;
 }
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+/* >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3 */
 
 #prodetails .single-pro-details {
     width: 100%; /* Mặc định là 100% chiều rộng */
 }
 
 #prodetails .single-pro-details h4 {
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
     padding: 20px 0 20px;
-=======
+/* ======= */
     padding: 20px 0;
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+/* >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3 */
 }
 
 #prodetails .single-pro-details input {
@@ -520,15 +521,15 @@ h5.modal-title {
     padding-left: 10px;
     font-size: 16px;
     margin-right: 20px;
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
     border-radius: 0.5rem;
     /* Độ cong của góc là 10px, bạn có thể điều chỉnh số này để thay đổi độ cong */
     border: 1px solid #ccc;
     /* Nếu muốn có đường viền xung quanh input */
-=======
+/* ======= */
     border-radius: 0.5rem; /* Độ cong của góc */
     border: 1px solid #ccc;
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+/* >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3 */
 }
 
 #prodetails .single-pro-details input:focus {
@@ -565,15 +566,15 @@ h4 {
 
 .product-container {
     background-color: #f2f2f2;
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
     /* Màu nền xám nhạt */
     padding: 25px;
     border-radius: 8px;
     /* margin: 20px auto; Canh giữa theo chiều ngang */
-=======
+/* ======= */
     padding: 25px;
     border-radius: 8px;
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+/* >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3 */
 }
 
 /* Media Queries cho các thiết bị nhỏ hơn */
@@ -610,12 +611,13 @@ h4 {
     list-style: none;
 }
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 .combo .sub-heading,
 .combo .heading {
     color: #333;
     /* Sử dụng màu sắc phù hợp */
-=======
+}
+/* ======= */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -705,7 +707,7 @@ header {
 .combo {
     padding: 50px 0;
     text-align: center;
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+/* >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3 */
 }
 
 .combo .sub-heading {
@@ -714,16 +716,16 @@ header {
 }
 
 .combo .heading {
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
     font-size: 3rem;
     margin-bottom: 3rem;
     color: #ff6699;
     /* Đổi màu để phù hợp với trang web */
-=======
+/* ======= */
     color: #333;
     font-size: 36px;
     margin-bottom: 40px;
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+/* >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3 */
 }
 
 .combo-container {
@@ -801,13 +803,13 @@ header {
 
 .tab-button.active,
 .tab-button:hover {
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
     background: #ff6699;
     color: #fff;
-=======
+/* ======= */
     background: #fff;
     border-bottom: 1px solid #fff;
->>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3
+/* >>>>>>> a5631bf07f086f3ce021c02a3780d214baacdcc3 */
 }
 
 .combo-subsection {
