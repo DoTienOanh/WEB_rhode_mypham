@@ -1,1 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rhode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="trangchinh/style.css" </head>
+
+<body>
+    <!-- header section starts -->
+<header>
+    <a href="#" class = "logo"><i class ="fas-fa-untensils"></i>rhode</a>
+    <nav class="navbar">
+        <a  href="index.html#home">Trang chủ</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="index.html#sanpham">Sản phẩm</a>
+        <!-- <a href="combo.html">Combo</a> -->
+        <div class="dropdown">
+            <a href="#">Combo</a>
+            <div class="dropdown-content">
+                <a href="set.html">Set</a>
+                <a href="combo1.html">Combo</a>
+            </div>
+        </div>
+        <a href="lienhe.html">Liên hệ</a>
+        <a href="index.html#review">Phản hồi</a>
+        <a href="qa.html">Q&A</a>
+       
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <!-- modal -->
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                    <div class="cart-items">
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0 $</span>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        
+        <i id="cart" class="fas fa-shopping-cart"></i>
+        <a href="dangnhap.html" class="fas fa-user-plus"></a>
+       
+    </div>
+        
+    
+
+</header>
+
+    <!-- header section ends -->
+    <!-- search form -->
+    <form action="" id="search-form">
+        <input type="search" placeholder="Tìm kiếm ở đây..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Sản phẩm đặc biệt của chúng tôi</span>
+                        <h3>Son dưỡng môi Rhode Peptide Lip Tint</h3>
+                        <p>Rhode Peptide Lip Tint mang đến nhiều hơn một thỏi son dưỡng bóng có màu với những mùi hương
+                            hấp dẫn.
+                            Việc tích hợp Peptide sẽ giúp giảm thâm, kích thích tăng tổng hợp collagen làm đầy rãnh môi.
+                        </p>
+                        <a href="index.html#sanpham" class="btn">Mua ngay</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/lipint1 (1).jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Sản phẩm đặc biệt của chúng tôi</span>
+                        <h3>Kem dưỡng ẩm Rhode Barrier Restore Cream</h3>
+                        <p>Kem dưỡng ẩm Rhode Barrier Restore Cream giàu dưỡng, nhưng nhẹ, thoải mái,
+                            giúp làm dịu và phục hồi hàng rào bảo vệ da.
+                            Sức mạnh peptide chống oxy hóa của chúng tôi mang lại
+                            làn da ngậm nước, mịn màng hơn, mềm mại hơn theo thời gian.</p>
+                        <a href="index.html#sanpham" class="btn">Mua ngay</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/duongam1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Sản phẩm đặc biệt của chúng tôi</span>
+                        <h3>Toner sữa dưỡng ẩm Rhode Glazing Milk</h3>
+                        <p>Sữa dưỡng ẩm Rhode Glazing Milk
+                            tinh chất nhẹ, giàu dinh dưỡng giúp tăng cường
+                            chức năng rào cản và cung cấp dưỡng ẩm ngay lập tức.</p>
+                        <a href="index.html#sanpham" class="btn">Mua ngay</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/toner1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Sản phẩm đặc biệt của chúng tôi</span>
+                        <h3>Serum dưỡng ẩm Rhode Peptide Glazing Fluid</h3>
+                        <p>Serum dưỡng ẩm Rhode Peptide Glazing Fluid
+                            Bước đặc trưng của Hailey để có làn da ẩm mượt.
+                            Một loại serum dạng gel nhẹ, hấp thụ nhanh,
+                            giúp làm đầy và hydrat hóa rõ rệt để tăng cường
+                            hàng rào bảo vệ da khỏe mạnh.</p>
+                        <a href="index.html#sanpham" class="btn">Mua ngay</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/serumslide.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- home section ends  -->
+
+    <!-- section SẢN PHẨM menu start-->
+    <!-- trgthuhg -->
+    <section class="sanpham" id="sanpham">
+
+        <h3 class="sub-heading"> Sản phẩm</h3>
+        <h1 class="heading">Glow up cùng rhode</h1>
+
+        <div class="box-container">
+            <!-- cleanser -->
+            <div class="box">
+                <div class="images" onclick="window.location.href='SRM.html';">
+                    <img class="img-prd" src="images/cleanser.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">SỮA RỬA MẶT</h3>
+                    <p>Sạch sâu, tươi mát</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">28.00 $</span>
+                </div>
+            </div>
+            <!-- toner -->
+            <div class="box">
+                <div class="images" onclick="window.location.href='Nuochoahong.html';">
+                    <img class="img-prd" src="images/tonner.jpg" alt="">
+                   
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">TONER</h3>
+                    <p>Làm mát và cân bằng pH cho da</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">30.00 $</span>
+                </div>
+            </div>
+            <!-- dưỡng ẩm -->
+            <div class="box">
+                <div class="images" onclick="window.location.href='Duongam.html';">
+                    <img class="img-prd" src="images/duongam.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">DƯỠNG ẨM</h3>
+                    <p>Lớp phục hồi dưỡng ẩm cho da luôn mềm mịn</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">30.00 $</span>
+                </div>
+            </div>
+            <!-- serum -->
+            <div class="box">
+                <div class="images" onclick="window.location.href='Serum.html';">
+                    <img class="img-prd" src="images/serum.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">SERUM</h3>
+                    <p>Lớp hydrat hóa phủ sương, cung cấp các dưỡng chất</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">30.00 $</span>
+                </div>
+            </div>
+            <!-- case -->
+            <div class="box">
+                <div class="images" onclick="window.location.href='case.html';">
+                    <img class="img-prd" src="images/caselip.jpg" alt="">
+                   
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">CASE</h3>
+                    <p>Thời thượng, cá tính, dễ dàng mang theo</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">20.00 $</span>
+                </div>
+            </div>
+            <!-- treatment -->
+            <div class="box">
+                <div class="images" onclick="window.location.href='Sonduongkhongmau.html';">
+                    <img class="img-prd" src="images/treatment.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">SON DƯỠNG KHÔNG MÀU</h3>
+                    <p>Giúp làm hồng và giúp môi căng mọng</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">16.00 $</span>
+                </div>
+            </div>
+
+            <!--sp1 liptint-->
+            <div class="box">
+                <div class="images" onclick="window.location.href='Sonvibanhmi.html';">
+                    <img class="img-prd" src="images/toast.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">SON DƯỠNG TOAST</h3>
+                    <p>Giúp đôi môi căng mọng, ngậm nước và nuôi dưỡng từ bên trong</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">16.00 $</span>
+                </div>
+            </div>
+            <!-- sp2 liptint-->
+            <div class="box">
+                <div class="images" onclick="window.location.href='Sonvithach.html';">
+                    <img class="img-prd" src="images/jellytint.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">SON DƯỠNG JELLYTINT</h3>
+                    <p>Giúp đôi môi căng mọng, ngậm nước và nuôi dưỡng từ bên trong</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">16.00 $</span>
+                </div>
+            </div>
+            <!-- sp3 liptint-->
+            <div class="box">
+                <div class="images" onclick="window.location.href='Sonvicaphe.html';">
+                    <img class="img-prd" src="images/espresso.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">SON DƯỠNG ESPRESSO</h3>
+                    <p>Giúp đôi môi căng mọng, ngậm nước và nuôi dưỡng từ bên trong</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">16.00 $</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images" onclick="window.location.href='Sonvimamxoi.html';">
+                    <img class="img-prd" src="images/raspberryjelly.jpg" alt="">
+                   
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">SON DƯỠNG RASPBERRYJELLY</h3>
+                    <p>Giúp đôi môi căng mọng, ngậm nước và nuôi dưỡng từ bên trong</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">16.00 $</span>
+                </div>
+            </div>
+            <!-- sp4 liptint -->
+            <div class="box">
+                <div class="images" onclick="window.location.href='Sonsanphamcuoi.html';">
+                    <img class="img-prd" src="images/spcuoi.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">SON DƯỠNG MILK</h3>
+                    <p>Giúp đôi môi căng mọng, ngậm nước và nuôi dưỡng từ bên trong</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">16.00 $</span>
+                </div>
+            </div>
+            <!-- sp cuối -->
+            <div class="box">
+                <div class="images" onclick="window.location.href='Sonribbon.html';">
+                    <img class="img-prd" src="images/ribbon.jpg" alt="">
+                    
+                </div>
+                <div class="content">
+                    <h3 class="content-product-h3">SON DƯỠNG RIBBON</h3>
+                    <p>Giúp đôi môi căng mọng, ngậm nước và nuôi dưỡng từ bên trong</p>
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    <span class="price">16.00 $</span>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+
+    </section>
+    <!-- section SẢN PHẨM end -->
+
+    <!-- trgthuhg -->
+    <!-- Phần phản hồi khách hàng -->
+    <section class="review" id="review">
+        <h3 class="sub-heading">Ý kiến được ghi lại vào buổi ra mắt rhode</h3>
+        <h1 class="heading">Beauty Blogger nói gì?</h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/fb1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>kendall</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Da của kendall đẹp hơn nhiều luôn. Cảm ơn rhode và hailey. hi vọng team càng ngày càng phát triển
+                        và có thêm nhiều sản phẩm giúp chị em glow up</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/fb2.jpg" alt="">
+                        <div class="user-info">
+                            <h3>tyla</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Son dưỡng môi đỉnh nhất từ trước đến giờ, ước gì tôi biết đến rhode sớm hơn. à màu cũng siêu đẹp
+                        và trendy luôn á. thích màu toast nhất</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/fb3.jpg" alt="">
+                        <div class="user-info">
+                            <h3>llolarosalie</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>as a beauty vlogger,the peptide is great. toast lip smell so good. but, shipping is quite late.
+                        though, i will buy them again. thanks hayley </p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/fb4.jpg" alt="">
+                        <div class="user-info">
+                            <h3>selena</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Mua combo của rhode là điều đúng đắn nhất selena làm từ trước đến giờ, chúc cho chị iu hailey
+                        càng ngày càng ra nhiều sản phẩm tuyệt vời.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/fb5.jpg" alt="">
+                        <div class="user-info">
+                            <h3>dojacat</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>i love rhode, i love hailey. this is the best cleanser i have used. My skin is better. i will buy
+                        others product of rhode. again, thank you</p>
+                </div>
+
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/fb6.jpg" alt="">
+                        <div class="user-info">
+                            <h3>babyjully</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Em iu Hailey, vì mê da của bả mà đu hết combo sản phẩm của rhode luôn á. I love you so much. Hi
+                        vọng bả ra thêm nhiều sản phẩm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trgthuhg -->
+
+
+
+
+
+
+
+    <!-- footer Manh -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Các cơ sở</h3>
+                <a href="#">Đống Đa, Hà Nội</a>
+                <a href="#">Cầu Giấy, Hà Nội</a>
+                <a href="#">Phủ Lý, Hà Nam</a>
+                <a href="#">TP. Vinh, Nghệ An</a>
+                <a href="#">Quận 1, Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3>Các mục</h3>
+                <a href="index.html">Trang chủ</a>
+                <a href="index.html#sanpham">Sản phẩm</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="lienhe.html">Liên hệ</a>
+                <a href="qa.html">Q&A</a>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên lạc</h3>
+                <a href="#">+124-456-7890</a>
+                <a href="#">+111-222-3333</a>
+                <a href="#">rhode@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Theo dõi chúng tôi</h3>
+                <a href="https://www.facebook.com/ntmahn/"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://x.com/SenselessWillow"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com/rhode/"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/ntmahn/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+
+        </div>
+
+        <div class="credit"> copyright @ 2024 by <span>nhóm 3 thiếu nữ và 1 chàng trai</span></div>
+
+    </section>
+
+    <!--  footer section ends -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="trangchinh/script.js"></script>
+</body>
+
+
+</html>
