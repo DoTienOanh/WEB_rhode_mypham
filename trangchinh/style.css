@@ -247,14 +247,15 @@ header .icons #menu-bars {
 
 .home .home-slider .slide .content h3 {
     color: var(--black);
-    font-size: 5.5rem;
+    font-size: 5rem;
 }
 
 .home .home-slider .slide .content p {
     color: var(--light-color);
     font-size: 2.2rem;
-    padding: 4.5rem 0;
+    padding: 4rem 0;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .swiper-pagination-bullet-active {
@@ -479,6 +480,74 @@ h5.modal-title {
 
 /* end cart */
 
+
+
+/*media queries */
+@media(max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width: 768px) {
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        transition: clip-path 0.3s ease-in-out;
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    #search-form #search-box {
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+    .home .home-slider .slide .content h3 {
+
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
 /* CHI TIẾT SẢN PHẨM */
 /* chi tiết sản phẩm  */
 #prodetails {
@@ -617,7 +686,6 @@ h4 {
 
 /* Combo MAnh */
 /* Combo Section */
-
 /* Style for Dropdown Menu */
 /* Dropdown styles */
 .navbar {
@@ -680,7 +748,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #fff;
+    background: (--light-color);
 }
 
 .navbar a {
@@ -914,15 +982,15 @@ header {
   
   .set .sub-heading {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--gray);
+    font-size: 3.7rem;
+    margin: 3rem;
+    color: (--light-color);
   }
   
   .set .heading {
     text-align: center;
-    font-size: 5rem;
-    margin-bottom: 4rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
   
   .set-subsection {
@@ -930,22 +998,23 @@ header {
   }
   
   .set-subsection .subsection-heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 3rem;
     color: var(--light-color);
   }
   
   .set-item {
-    background-color: #fff;
+    background-color: #f1f1f1;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
     overflow: hidden;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
   
   .set-item .set-carousel {
+    margin: 40px 20px 0px 20px;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -954,15 +1023,15 @@ header {
   }
   
   .set-item .set-carousel img {
-    flex: 0 0 auto;
+    flex: 10 0 auto;
     width: 100%;
     scroll-snap-align: start;
     width: 300px; /* Chiều rộng ảnh */
     height: 250px; /* Chiều cao ảnh */
     object-fit: contain; /* Giữ nguyên tỷ lệ khung hình */
     max-width: 400px; /* Chiều rộng tối đa */
-    max-height: 300px; /* Chiều cao tối đa */
-    flex: 0 0 auto; /* Giữ nguyên tỷ lệ khung hình của ảnh */
+    max-height: 500px; /* Chiều cao tối đa */
+    flex: 10 0 auto; /* Giữ nguyên tỷ lệ khung hình của ảnh */
   }
   
   .set-item .set-info {
@@ -971,25 +1040,36 @@ header {
   }
   
   .set-item h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--gray);
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     text-align: center;
+    text-transform: uppercase;
   }
   
-  .set-item p {
+  .set-item h4 {
     font-size: 2rem;
     color: var(--light-color);
     line-height: 1.6;
     margin-bottom: 2rem;
     text-align: center;
   }
+  .set-item p {
+    font-size: 1.7rem;
+    font-family: 'Nunito';
+    line-height: 1.6;
+    color: #999;
+    margin-bottom: 2rem;
+    padding: 0px 50px 10px 50px;
+    text-align: justify;
+    
+  }
   
   .set-item .btn {
     display: inline-block;
     font-size: 1.8rem;
-    color: var(--box-shadow);
-    background: var(--light-color);
+    color: black;
+    background: #999;
     border-radius: .5rem;
     cursor: pointer;
     padding: 1.2rem 3rem;
@@ -1113,9 +1193,9 @@ header {
 
 .combo1 .sub-heading {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--gray);
+    font-size: 3.7rem;
+    margin: 3rem;
+    color: (--light-color);
 }
 
 .combo1 .heading {
@@ -1129,7 +1209,7 @@ header {
 }
 
 .combo1-subsection .subsection-heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 3rem;
     color: var(--dark-pink);
@@ -1233,11 +1313,11 @@ header {
 
 @media (max-width: 768px) {
     .combo1 {
-        padding: 4rem 6%;
+        padding: 10rem 6%;
     }
     
     .combo1 .heading {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     
     .combo1-subsection .subsection-heading {
@@ -1265,70 +1345,7 @@ header {
 
 
 
-/*media queries */
-@media(max-width: 991px) {
-    html {
-        font-size: 55%;
-    }
 
-    header {
-        padding: 1rem 2rem;
-    }
-
-    section {
-        padding: 2rem;
-    }
-
-}
-
-@media(max-width: 768px) {
-    header .icons #menu-bars {
-        display: inline-block;
-    }
-
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        border-bottom: .1rem solid rgba(0, 0, 0, .2);
-        padding: 1rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-
-    }
-
-    header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
-    }
-
-    header .navbar a {
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background: #eee;
-    }
-
-    #search-form #search-box {
-        width: 90%;
-        margin: 0 1rem;
-    }
-
-    .home .home-slider .slide .content h3 {
-
-        font-size: 5rem;
-    }
-}
-
-@media(max-width: 991px) {
-    html {
-        font-size: 50%;
-    }
-
-}
 
 
 
@@ -1341,12 +1358,15 @@ header {
     border-radius: .5rem;
     position: relative;
 }
+.review .heading{
+    margin-bottom: 1.5rem;
+}
 
 .review .slide .fa-quote-right {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    font-size: 6rem;
+    font-size: 3rem;
     color: #ccc;
 }
 
@@ -1365,20 +1385,21 @@ header {
 }
 
 .review .slide .user h3 {
-    color: var(--black);
+    color: var(--light-color);
     font-size: 2rem;
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
 }
 
 .review .slide .user i {
     font-size: 1.3rem;
-    color: var(--black);
+    color: var(--light-color);
 }
 
 .review .slide p {
     font-size: 1.5rem;
     line-height: 1.8;
     color: var(--light-color);
+    text-align: justify;
 }
 
 /* end REVIEW FEEDBACK */
@@ -1430,24 +1451,7 @@ header {
     object-fit: cover;
 }
 
-.sanpham .box-container .box .images .fa-heart {
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    background: #fff;
-    border-radius: 50%;
-    color: var(--black);
-}
 
-.sanpham .box-container .box .images .fa-heart:hover {
-    background-color: var(--gray);
-    color: #fff;
-}
 
 .sanpham .box-container .box .content {
     padding: 2rem;
@@ -1465,6 +1469,7 @@ header {
 }
 
 .sanpham .box-container .box .content p {
+    margin-bottom: 10px;
     color: var(--light-color);
     font-size: 1.1rem;
     padding: .2rem 0;
@@ -1489,20 +1494,21 @@ header {
 }
 
 .about .sub-heading,
-.about .heading {
-    text-align: center;
-}
+
 
 .about .sub-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--black);
     margin-bottom: 1rem;
+    margin-top: 0.7rem;
 }
 
 .about .heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--black);
     margin-bottom: 2rem;
+    margin-top: 5rem;
+    color: var(--light-color)
 }
 
 .about .centered-image {
@@ -1526,21 +1532,25 @@ header {
     text-align: left;
     margin: 0 auto;
     max-width: 800px;
-    padding: 20px;
+    padding: 40px;
+    background-color: #f1f1f1;
+    border-radius: 2%;
 }
 
 .about .content h3 {
     text-align: center;
-    color: var(--black);
-    font-size: 2.5rem;
+    color: gray;
+    font-size: 2.2rem;
     padding: 0.5rem 0;
+    text-transform: uppercase;
 }
 
 .about .content p {
     color: var(--light-color);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 0.5rem 0;
     line-height: 2;
+    text-align: justify;
 }
 
 .about .additional-content {
@@ -1551,14 +1561,14 @@ header {
 .about .additional-content .image {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+
 }
 
 .about .additional-content .image img {
     display: flex;
-    max-width: 100%;
+    max-width: 600px;
     height: auto;
-    max-width: 400px;
     /* Adjust this value as needed for the desired size */
     border-radius: 10px;
     /* Optional: adds rounded corners */
@@ -1566,7 +1576,7 @@ header {
 
 .about .additional-content p {
     color: var(--light-color);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 0.5rem 0;
     line-height: 2;
     max-width: 800px;
@@ -1633,9 +1643,10 @@ header {
 }
 
 .qa-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #333;
+    padding-top: 2rem;
+    font-size: 5em;
+    margin-bottom: 20px;
+    color: gray;
     letter-spacing: 2px;
     font-weight: 300;
 }
@@ -1700,6 +1711,7 @@ header {
 /* ends Q&A Manh */
 
 /* Lienhe Manh */
+
 .contact-section {
     padding: 80px 20px;
     background-color: #f9f9f9;
@@ -1707,13 +1719,23 @@ header {
     font-family:'Nunito', sans-serif;
     border-top: 2px solid #eee;
 }
+.contact-section .box1{
+    border-radius: 1%;
+    background-color: white;
+    padding: 20px 20px ;
+    margin: 20px 90px 40px 90px;
 
+}
 .contact-section h2 {
-    font-size: 3em;
-    margin-bottom: 30px;
-    color: #333;
-    letter-spacing: 2px;
-    font-weight: 300;
+    font-size: 3.7em;
+    margin: 10px;
+    color: var(--light-color);
+    font-weight: 900;
+}
+.contact-info p{
+    font-size: 1.2em;
+    color:grey
+    
 }
 
 .contact-info {
@@ -1721,6 +1743,7 @@ header {
     justify-content: center;
     margin-bottom: 50px;
     flex-wrap: wrap;
+    color:grey
 }
 
 .info-item {
@@ -1734,7 +1757,7 @@ header {
 .info-item i {
     font-size: 2em;
     color: var(--black);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .contact-map iframe {
@@ -1759,7 +1782,7 @@ header {
 
 .footer .box-container .box h3 {
     padding: .5rem 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--black);
 }
 
@@ -1778,11 +1801,11 @@ header {
 .footer .credit {
     text-align: center;
     border-top: .1rem solid rgba(0, 0, 0, .1);
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: var(--black);
     padding: .5rem;
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
+    padding-top: 1.1rem;
+    margin-top: 1.1rem;
 }
 
 .footer .credit span {
