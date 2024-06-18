@@ -77,7 +77,7 @@
 
 <!-- Combo section -->
 <section class="combo1" id="combo1">
-    <h3 class="sub-heading">SET NỔI BẬT</h3>
+    <h3 class="sub-heading">COMBO NỔI BẬT</h3>
   
 
     <!-- Sub-section: Set -->
@@ -92,11 +92,12 @@
                     <!-- <img src="images/the kit set/the kit.jpg" alt="Kit Set 3"> -->
                 </div>
                 <div class="combo1-info">
-                    <h3>Combo Treatment</h3>
-                    <p>Chăm Sóc Toàn Diện<br>
-                        Combo Treatment là giải pháp lý tưởng cho những ai muốn chăm sóc da một cách toàn diện và hiệu quả. 
+                    <h3>Combo Treatment <br><span class="price">200.00 $</span></h3>
+                    <h4>CHĂM SÓC TOÀN DIỆN<br></h4>
+                       <p>Combo Treatment là giải pháp lý tưởng cho những ai muốn chăm sóc da một cách toàn diện và hiệu quả. 
                         Với sự kết hợp của nhiều sản phẩm chất lượng cao, bạn sẽ nhanh chóng thấy được sự cải thiện rõ rệt trên làn da của mình.</p>
-                    <a href="#sanpham" class="btn">Xem sản phẩm</a>
+                    <!-- <a href="giohang.html" class="btn btn-cart">Thêm vào giỏ hàng</a> -->
+                    <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
 
@@ -148,7 +149,23 @@
     <div class="credit"> copyright @ 2024 by <span>nhóm 3 thiếu nữ và 1 chàng trai</span></div>
 
 </section>
+<script>
+    var  MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
 
+    smallimg[0].onclick = function(){
+        MainImg.src= smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+        MainImg.src= smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+        MainImg.src= smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+        MainImg.src= smallimg[3].src;
+    }
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- custom js file link -->

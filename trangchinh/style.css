@@ -1246,9 +1246,13 @@ header {
     flex: 10 0 auto; /* Giữ nguyên tỷ lệ khung hình của ảnh */
 }
 
-.combo1-item .combo-info {
+.combo1-item .combo1-info {
     padding: 3rem;
     margin: 0 auto; /* Căn giữa .set-info theo chiều ngang */
+}
+
+.combo1-item .combo1-info button {
+    margin-top: -7px;
 }
 
 .combo1-item h3 {
@@ -1258,6 +1262,14 @@ header {
     text-align: center;
     text-transform: uppercase;
 }
+
+.combo1-item h4 {
+    font-size: 2rem;
+    color: var(--light-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 
 .combo1-item p {
     font-size: 1.7rem;
@@ -1285,11 +1297,7 @@ header {
     
 }
 
-
-
-   
-    
-
+  
 @media (max-width: 1024px) {
     .combo1 .sub-heading {
         font-size: 2rem;
@@ -1322,9 +1330,10 @@ header {
 }
 
 
+
 @media (max-width: 768px) {
     .combo1 {
-        padding: 4rem 6%;
+        padding: 4rem 4%;
     }
     
     .combo1 .heading {
@@ -1354,7 +1363,6 @@ header {
     }
 }
 /* ends combo1 Mạnh */
-
 
 
 
