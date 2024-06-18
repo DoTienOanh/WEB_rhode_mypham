@@ -87,7 +87,7 @@
         const storedUser = JSON.parse(localStorage.getItem('user'));
 
         if (storedUser && storedUser.email === email && storedUser.password === password) {
-            window.location.href = 'tranhchinh.html'; // Chuyển hướng đến trang tranhchinh.html
+            window.location.href = 'index.html'; // Chuyển hướng đến trang index.html
         } else {
             alert('Email hoặc mật khẩu không đúng.');
         }
