@@ -1223,6 +1223,8 @@ header {
     overflow: hidden;
     margin-bottom: 3rem;
     text-align: center;
+    padding: 2rem 7rem 5rem 7rem;
+
 }
 
 .combo1-item .combo-carousel {
@@ -1259,6 +1261,7 @@ header {
     font-size: 3rem;
     color: var(--gray);
     margin-bottom: 0.5rem;
+    padding-top: 4rem;
     text-align: center;
     text-transform: uppercase;
 }
