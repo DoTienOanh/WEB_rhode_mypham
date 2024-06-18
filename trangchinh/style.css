@@ -1041,8 +1041,9 @@ header {
   .set-item h3 {
     font-size: 3rem;
     color: var(--gray);
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     text-align: center;
+    text-transform: uppercase;
   }
   
   .set-item h4 {
@@ -1491,20 +1492,21 @@ header {
 }
 
 .about .sub-heading,
-.about .heading {
-    text-align: center;
-}
+
 
 .about .sub-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--black);
     margin-bottom: 1rem;
+    margin-top: 0.7rem;
 }
 
 .about .heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--black);
     margin-bottom: 2rem;
+    margin-top: 5rem;
+    color: var(--light-color)
 }
 
 .about .centered-image {
@@ -1528,21 +1530,25 @@ header {
     text-align: left;
     margin: 0 auto;
     max-width: 800px;
-    padding: 20px;
+    padding: 40px;
+    background-color: #f1f1f1;
+    border-radius: 2%;
 }
 
 .about .content h3 {
     text-align: center;
-    color: var(--black);
-    font-size: 2.5rem;
+    color: gray;
+    font-size: 2.2rem;
     padding: 0.5rem 0;
+    text-transform: uppercase;
 }
 
 .about .content p {
     color: var(--light-color);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 0.5rem 0;
     line-height: 2;
+    text-align: justify;
 }
 
 .about .additional-content {
@@ -1553,14 +1559,14 @@ header {
 .about .additional-content .image {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+
 }
 
 .about .additional-content .image img {
     display: flex;
-    max-width: 100%;
+    max-width: 600px;
     height: auto;
-    max-width: 400px;
     /* Adjust this value as needed for the desired size */
     border-radius: 10px;
     /* Optional: adds rounded corners */
@@ -1568,7 +1574,7 @@ header {
 
 .about .additional-content p {
     color: var(--light-color);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 0.5rem 0;
     line-height: 2;
     max-width: 800px;
