@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rhode</title>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
     <header>
         <a href="#" class="logo"><i class="fas-fa-untensils"></i>rhode</a>
         <nav class="navbar">
@@ -37,25 +31,21 @@
                         <h5 class="modal-title">Giỏ Hàng</h5>
                         <span class="close">&times;</span>
                     </div>
-                    <!-- modal -->
                     <div class="modal-body">
                         <div class="cart-row">
                             <span class="cart-item cart-header cart-column">Sản Phẩm</span>
                             <span class="cart-price cart-header cart-column">Giá</span>
                             <span class="cart-quantity cart-header cart-column">Số Lượng</span>
                         </div>
-                        <div class="cart-items">
-                            <div class="cart-total">
-                                <strong class="cart-total-title">Tổng Cộng:</strong>
-                                <span class="cart-total-price">0 $</span>
-                            </div>
+                        <div class="cart-items"></div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0 $</span>
                         </div>
-    
-    
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
-                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
                     </div>
                 </div>
             </div>
@@ -63,122 +53,120 @@
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
-            
             <i id="cart" class="fas fa-shopping-cart"></i>
         </div>
-    
     </header>
 
-<form action = "" id="search-form">
-    <input type="search" placeholder="Tìm kiếm ở đây..." name ="" id="search-box">
-    <label for="search-box" class="fas fa-search"></label>
-    <i class="fas fa-times" id="close"></i>
-</form>
+    <form action="" id="search-form">
+        <input type="search" placeholder="Tìm kiếm ở đây..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
 
-<section class="set" id="set">
-    <h3 class="sub-heading">SET NỔI BẬT</h3>
-  
-    <div class="set-subsection active" id="set-container">
-      <div class="set-container">
-        <div class="set-item">
-          <div class="set-carousel">
-            <img src="images/the kit set/the kit.jpg" alt="Kit Set 1">
-            <img src="images/the kit set/kit.jpg" alt="Kit Set 2">
-            <img src=" images/the kit set/kit 1.jpg" alt="Kit Set 3">
-          </div>
-          <div class="set-info">
-            <h3>Kit Set<br><span class="price">250.00 $</span></h3>
-            <h4>BỐN THIẾT YẾU CHO DA HÀNG NGÀY<br></h4>
-              <p>Gặp gỡ những tác phẩm kinh điển mới của bạn, tất cả được gói gọn trong túi bong bóng rhode. 
-              Các sản phẩm chăm sóc da thiết yếu đã được thử nghiệm của chúng tôi được bào chế để nuôi dưỡng 
-              hàng rào bảo vệ tối ưu, mang lại cảm giác mơ màng trên làn da và thực hiện đa nhiệm trong thói quen của bạn. <br>
-              Hãy sử dụng chúng vào buổi sáng và buổi tối, sử dụng riêng lẻ hoặc kết hợp với các sản phẩm chăm sóc da khác, 
-              kết hợp với trang điểm và mang theo trong chuyến du lịch của bạn.</p>
-            <div class="set-video">
-              <video src="video/THE KIT.mp4" controls></video>
+    <section class="set" id="set">
+        <h3 class="sub-heading">SET NỔI BẬT</h3>
+        <div class="set-subsection active" id="set-container">
+            <div class="set-container">
+                <div class="set-item">
+                    <div class="set-carousel">
+                        <img id="MainImg" src="images/the kit set/the kit.jpg" alt="Kit Set 1">
+                        <img src="images/the kit set/kit.jpg" alt="Kit Set 2">
+                        <img src="images/the kit set/kit 1.jpg" alt="Kit Set 3">
+                    </div>
+                    <div class="set-info">
+                        <h3>Kit Set<br><span class="price">250.00 $</span></h3>
+                        <h4>KITSET- BỐN THIẾT YẾU CHO DA<br></h4>
+                        <p>Gặp gỡ những tác phẩm kinh điển mới của bạn, tất cả được gói gọn trong túi bong bóng rhode. Các sản phẩm chăm sóc da thiết yếu đã được thử nghiệm của chúng tôi được bào chế để nuôi dưỡng hàng rào bảo vệ tối ưu, mang lại cảm giác mơ màng trên làn da và thực hiện đa nhiệm trong thói quen của bạn. <br> Hãy sử dụng chúng vào buổi sáng và buổi tối, sử dụng riêng lẻ hoặc kết hợp với các sản phẩm chăm sóc da khác, kết hợp với trang điểm và mang theo trong chuyến du lịch của bạn.</p>
+                        <div class="set-video">
+                            <video src="video/THE KIT.mp4" controls></video>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+
+                <div class="set-item">
+                    <div class="set-carousel">
+                        <img src="images/the barrier set/the barier (1).jpg" alt="Barrier Set 1">
+                        <img src="images/the barrier set/the barier (2).jpg" alt="Barrier Set 2">
+                        <img src="images/the barrier set/the barier (3).jpg" alt="Barrier Set 3">
+                    </div>
+                    <div class="set-info">
+                        <h3>Barrier Set<br><span class="price">400.00 $</span></h3>
+                        <h4>THE BARRIER SET - BỘ BA SẢN PHẨM SKIN DOU</h4>
+                        <p>Bộ ba nuôi dưỡng Ba công thức thiết yếu giúp nuôi dưỡng hàng rào bảo vệ của bạn để mang lại làn da sáng mịn. Bộ sưu tập này phối hợp với nhau để chuẩn bị, tráng men và phục hồi làn da của bạn để có một hàng rào ngậm nước và hạnh phúc. Dễ dàng phù hợp với quy trình chăm sóc da buổi sáng và buổi tối của bạn và an toàn cho mọi loại da. <br> Gồm 3 sản phẩm full size: Glazing Milk, Peptide Glazing Fluid, Kem phục hồi rào cản</p>
+                        <div class="set-video">
+                            <video src="video/the barrier video.mp4" controls></video>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
             </div>
-            <!-- <a href="giohang.html" class="btn">Thêm vào giỏ hàng</a> -->
-            <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
-          </div>
         </div>
-  
-        <div class="set-item">
-          <div class="set-carousel">
-            <img src="images/the barrier set/the barier (1).jpg" alt="Barrier Set 1">
-            <img src="images/the barrier set/the barier (2).jpg" alt="Barrier Set 2">
-            <img src="images/the barrier set/the barier (3).jpg" alt="Barrier Set 3">
-          </div>
-          <div class="set-info">
-            
-            <h3>Barrier Set<br><span class="price">400.00 $</span></h3>
-            <h4> THE BARRIER SET - BỘ BA SẢN PHẨM SKIN DOU</h4>
-             <p>
-              Bộ ba nuôi dưỡng
-              Ba công thức thiết yếu giúp nuôi dưỡng hàng rào bảo vệ của bạn để mang lại làn da sáng mịn. Bộ sưu tập này phối hợp với nhau để chuẩn bị, tráng men và phục hồi làn da của bạn để có một hàng rào ngậm nước và hạnh phúc. Dễ dàng phù hợp với quy trình chăm sóc da buổi sáng và buổi tối của bạn và an toàn cho mọi loại da.
-              <br>
-              Gồm 3 sản phẩm full size: Glazing Milk, Peptide Glazing Fluid, Kem phục hồi rào cản
-             </p>
-            
-            <div class="set-video">
-              <video src="video/the barrier video.mp4" controls></video>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Các cơ sở</h3>
+                <a href="#">Đống Đa, Hà Nội</a>
+                <a href="#">Cầu Giấy, Hà Nội</a>
+                <a href="#">Phủ Lý, Hà Nam</a>
+                <a href="#">TP. Vinh, Nghệ An</a>
+                <a href="#">Quận 1, Hồ Chí Minh</a>
             </div>
-            <!-- <a href="giohang.html" class="btn">Thêm vào giỏ hàng</a> -->
-            <button type="button" class="btn btn-cart">Thêm vào giỏ hàng</button>
-            
-          </div>
+            <div class="box">
+                <h3>Các mục</h3>
+                <a href="tranhchinh.html">Trang chủ</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="combo.html">Combo</a>
+                <a href="lienhe.html">Liên hệ</a>
+                <a href="qa.html">Q & A</a>
+            </div>
+            <div class="box">
+                <h3>Thông tin liên lạc</h3>
+                <a href="#">+124-456-7890</a>
+                <a href="#">+111-222-3333</a>
+                <a href="#">rhode@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>Theo dõi chúng tôi</h3>
+                <a href="https://www.facebook.com/ntmahn/"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://x.com/SenselessWillow"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com/rhode/"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/ntmahn/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  
+        <div class="credit"> copyright @ 2024 by <span>nhóm 3 thiếu nữ và 1 chàng trai</span></div>
+    </section>
 
-<!-- footer Manh -->
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>Các cơ sở</h3>
-            <a href="#">Đống Đa, Hà Nội</a>
-            <a href="#">Cầu Giấy, Hà Nội</a>
-            <a href="#">Phủ Lý, Hà Nam</a>
-            <a href="#">TP. Vinh, Nghệ An</a>
-            <a href="#">Quận 1, Hồ Chí Minh</a>
-        </div>
-
-        <div class="box">
-            <h3>Các mục</h3>
-            <a href="tranhchinh.html">Trang chủ</a>
-            <a href="gioithieu.html">Giới thiệu</a>
-            <a href="combo.html">Combo</a>
-            <a href="lienhe.html">Liên hệ</a>
-            <a href="qa.html">Q & A</a>
-        </div>
-        
-        <div class="box">
-            <h3>Thông tin liên lạc</h3>
-            <a href="#">+124-456-7890</a>
-            <a href="#">+111-222-3333</a>
-            <a href="#">rhode@gmail.com</a>
-        </div>
-
-        <div class="box">
-            <h3>Theo dõi chúng tôi</h3>
-            <a href="https://www.facebook.com/ntmahn/"><i class="fab fa-facebook-f"></i> Facebook</a>
-            <a href="https://x.com/SenselessWillow"><i class="fab fa-twitter"></i> Twitter</a>
-            <a href="https://www.instagram.com/rhode/"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://www.linkedin.com/in/ntmahn/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-        </div>
-
-    </div>
-
-    <div class="credit"> copyright @ 2024 by <span>nhóm 3 thiếu nữ và 1 chàng trai</span></div>
-
-</section>
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- custom js file link -->
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+<script>
+  // Modal
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("cart");
+var close = document.getElementsByClassName("close")[0];
+var close_footer = document.getElementsByClassName("close-footer")[0];
+var order = document.getElementsByClassName("order")[0];
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+close.onclick = function () {
+    modal.style.display = "none";
+}
+close_footer.onclick = function () {
+    modal.style.display = "none";
+}
+order.onclick = function () {
+    alert("Cảm ơn bạn đã thanh toán đơn hàng");
+    window.location.href = 'tranhchinh.html';
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
