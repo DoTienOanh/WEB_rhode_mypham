@@ -685,7 +685,6 @@ h4 {
 
 /* Combo MAnh */
 /* Combo Section */
-
 /* Style for Dropdown Menu */
 /* Dropdown styles */
 .navbar {
@@ -748,7 +747,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #fff;
+    background: (--light-color);
 }
 
 .navbar a {
@@ -982,15 +981,15 @@ header {
   
   .set .sub-heading {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--gray);
+    font-size: 3rem;
+    margin: 3rem;
+    color: gray;
   }
   
   .set .heading {
     text-align: center;
     font-size: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   
   .set-subsection {
@@ -1005,15 +1004,16 @@ header {
   }
   
   .set-item {
-    background-color: #fff;
+    background-color: #f1f1f1;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
     overflow: hidden;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
   
   .set-item .set-carousel {
+    margin: 40px 20px 0px 20px;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -1022,15 +1022,15 @@ header {
   }
   
   .set-item .set-carousel img {
-    flex: 0 0 auto;
+    flex: 10 0 auto;
     width: 100%;
     scroll-snap-align: start;
     width: 300px; /* Chiều rộng ảnh */
     height: 250px; /* Chiều cao ảnh */
     object-fit: contain; /* Giữ nguyên tỷ lệ khung hình */
     max-width: 400px; /* Chiều rộng tối đa */
-    max-height: 300px; /* Chiều cao tối đa */
-    flex: 0 0 auto; /* Giữ nguyên tỷ lệ khung hình của ảnh */
+    max-height: 500px; /* Chiều cao tối đa */
+    flex: 10 0 auto; /* Giữ nguyên tỷ lệ khung hình của ảnh */
   }
   
   .set-item .set-info {
@@ -1039,25 +1039,35 @@ header {
   }
   
   .set-item h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--gray);
     margin-bottom: 2rem;
     text-align: center;
   }
   
-  .set-item p {
+  .set-item h4 {
     font-size: 2rem;
     color: var(--light-color);
     line-height: 1.6;
     margin-bottom: 2rem;
     text-align: center;
   }
+  .set-item p {
+    font-size: 1.7rem;
+    font-family: 'Nunito';
+    line-height: 1.6;
+    color: #999;
+    margin-bottom: 2rem;
+    padding: 0px 50px 10px 50px;
+    text-align: justify;
+    
+  }
   
   .set-item .btn {
     display: inline-block;
     font-size: 1.8rem;
-    color: var(--box-shadow);
-    background: var(--light-color);
+    color: black;
+    background: #999;
     border-radius: .5rem;
     cursor: pointer;
     padding: 1.2rem 3rem;
@@ -1197,7 +1207,7 @@ header {
 }
 
 .combo1-subsection .subsection-heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 3rem;
     color: var(--dark-pink);
@@ -1301,11 +1311,11 @@ header {
 
 @media (max-width: 768px) {
     .combo1 {
-        padding: 4rem 6%;
+        padding: 10rem 6%;
     }
     
     .combo1 .heading {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     
     .combo1-subsection .subsection-heading {
@@ -1346,12 +1356,15 @@ header {
     border-radius: .5rem;
     position: relative;
 }
+.review .heading{
+    margin-bottom: 1.5rem;
+}
 
 .review .slide .fa-quote-right {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    font-size: 6rem;
+    font-size: 3rem;
     color: #ccc;
 }
 
@@ -1372,7 +1385,7 @@ header {
 .review .slide .user h3 {
     color: var(--black);
     font-size: 2rem;
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
 }
 
 .review .slide .user i {
@@ -1689,6 +1702,7 @@ header {
 /* ends Q&A Manh */
 
 /* Lienhe Manh */
+
 .contact-section {
     padding: 80px 20px;
     background-color: #f9f9f9;
@@ -1696,13 +1710,24 @@ header {
     font-family:'Nunito', sans-serif;
     border-top: 2px solid #eee;
 }
+.contact-section .box1{
+    border-radius: 1%;
+    background-color: white;
+    padding: 20px 20px ;
+    margin: 20px 90px 40px 90px;
 
+}
 .contact-section h2 {
-    font-size: 3em;
-    margin-bottom: 30px;
-    color: #333;
-    letter-spacing: 2px;
-    font-weight: 300;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    margin: 10px;
+    color: black;
+    font-weight: 900;
+}
+.contact-info p{
+    font-size: 1.2em;
+    color:grey
+    
 }
 
 .contact-info {
@@ -1710,6 +1735,7 @@ header {
     justify-content: center;
     margin-bottom: 50px;
     flex-wrap: wrap;
+    color:grey
 }
 
 .info-item {
@@ -1723,7 +1749,7 @@ header {
 .info-item i {
     font-size: 2em;
     color: var(--black);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .contact-map iframe {
@@ -1748,7 +1774,7 @@ header {
 
 .footer .box-container .box h3 {
     padding: .5rem 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--black);
 }
 
@@ -1767,11 +1793,11 @@ header {
 .footer .credit {
     text-align: center;
     border-top: .1rem solid rgba(0, 0, 0, .1);
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: var(--black);
     padding: .5rem;
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
+    padding-top: 1.1rem;
+    margin-top: 1.1rem;
 }
 
 .footer .credit span {
