@@ -1435,24 +1435,7 @@ header {
     object-fit: cover;
 }
 
-.sanpham .box-container .box .images .fa-heart {
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    background: #fff;
-    border-radius: 50%;
-    color: var(--black);
-}
 
-.sanpham .box-container .box .images .fa-heart:hover {
-    background-color: var(--gray);
-    color: #fff;
-}
 
 .sanpham .box-container .box .content {
     padding: 2rem;
@@ -1470,6 +1453,7 @@ header {
 }
 
 .sanpham .box-container .box .content p {
+    margin-bottom: 10px;
     color: var(--light-color);
     font-size: 1.1rem;
     padding: .2rem 0;
