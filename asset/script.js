@@ -168,7 +168,7 @@ close_footer.onclick = function () {
 }
 order.onclick = function () {
     alert("Cảm ơn bạn đã thanh toán đơn hàng");
-    window.location.href = 'tranhchinh.html';
+    window.location.href = 'index.html';
 }
 window.onclick = function (event) {
     if (event.target == modal) {
@@ -316,7 +316,7 @@ close_footer.onclick = function () {
 }
 order.onclick = function () {
     alert("Cảm ơn bạn đã thanh toán đơn hàng");
-    window.location.href = 'tranhchinh.html';
+    window.location.href = 'index.html';
 }
 window.onclick = function (event) {
     if (event.target == modal) {
